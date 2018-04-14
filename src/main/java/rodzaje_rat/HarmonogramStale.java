@@ -1,9 +1,16 @@
 package rodzaje_rat;
 
+import servlet.ParametryKredytu;
+
 public class HarmonogramStale extends Harmonogram {
 
+    HarmonogramStale (ParametryKredytu parametryKredytu) {
+        super(parametryKredytu);
+    }
+
     @Override
-    public void wyliczRaty(int ilosc_rat, double kwota_kredytu,  double oprocentowanie, double oplata_stala) {
+    public void wyliczRaty() {
+
         /*
                K*q^n(q-1)
           R = ----------

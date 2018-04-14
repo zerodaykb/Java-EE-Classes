@@ -2,6 +2,13 @@
     background: red;
 }
 
+.generatorPdf {
+    height: 50px;
+    width: 100px;
+    color: red;
+    background: yellow;
+}
+
 .verticalLabel {
     display: inline-grid;
     vertical-align: middle;

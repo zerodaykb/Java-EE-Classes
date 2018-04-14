@@ -1,10 +1,16 @@
 package rodzaje_rat;
 
 
+import servlet.ParametryKredytu;
+
 public class HarmonogramMalejace extends Harmonogram {
 
+    HarmonogramMalejace (ParametryKredytu parametryKredytu) {
+        super(parametryKredytu);
+    }
+
     @Override
-    public void wyliczRaty(int ilosc_rat, double kwota_kredytu,  double oprocentowanie, double oplata_stala) {
+    public void wyliczRaty() {
 
         double q = 1/12.0 * oprocentowanie/100;
         double kwota_kapitalu = Math.round(kwota_kredytu / ilosc_rat * 100) / 100.0d;

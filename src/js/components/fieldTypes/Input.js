@@ -23,7 +23,7 @@ export default class Input extends Component {
         type={this.props.type}
         value={this.props.value || this.state.value}
         onChange={this.handleChange}
-        onSubmit={this.props.handleSubmit}
+        // onSubmit={this.props.handleSubmit}
       />
     )
   };

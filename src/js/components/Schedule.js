@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Input from './fieldTypes/Input'
-import autobind from 'autobind-decorator/index'
-import { actionSetParameters } from '../actions'
+import autobind from 'autobind-decorator'
+import { actionGetPdf } from '../actions'
+import PdfButton from './PdfButton'
 
 const mapStateToProps = state => {
   return {
@@ -19,12 +19,6 @@ const mapDispatchToProps = dispatch => ({
 @connect(mapStateToProps, mapDispatchToProps)
 export default class Schedule extends Component {
 
-  @autobind
-  handleSubmit(event) {
-    event.preventDefault();
-    this.props.getPdf();
-  }
-
   render() {
     if(this.props.hasErrored) {
       return <p>Error. Przesłano złe parametry.</p>;
@@ -36,7 +30,7 @@ export default class Schedule extends Component {
     if(this.props.rows.length > 0) {
       return (
         <div className="">
-          <Input type="butto" value="Generuj pdf" onSubmit={this.handleSubmit}/>
+          <PdfButton pdfClick={this.props.getPdf}/>
           <table className="table">
             <thead>
             <tr>

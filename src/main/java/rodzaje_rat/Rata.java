@@ -14,4 +14,24 @@ public class Rata {
         this.oplata_stala = oplata_stala;
         this.kwota_calkowita = kwota_calkowita;
     }
+
+    public int getNr_raty () {
+        return nr_raty;
+    }
+
+    public double getKwota_kapitalu () {
+        return kwota_kapitalu;
+    }
+
+    public double getKwota_odsetek () {
+        return kwota_odsetek;
+    }
+
+    public double getOplata_stala () {
+        return oplata_stala;
+    }
+
+    public double getKwota_calkowita () {
+        return kwota_calkowita;
+    }
 }
