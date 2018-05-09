@@ -1,12 +1,12 @@
 {
 	"info": {
 		"_postman_id": "9a24ccf5-ed17-4e68-84a1-6c4666700788",
-		"name": "zaliczeniowe",
+		"name": "restapp",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies",
+			"name": "http://localhost:8080/restapp/rest/movies",
 			"request": {
 				"method": "GET",
 				"header": [
@@ -20,14 +20,14 @@
 					"raw": "{\n\t\"title\": \"test_movie_1\",\n\t\"releaseDate\": \"01-01-2001\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies",
+					"raw": "http://localhost:8080/restapp/rest/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies"
 					]
@@ -37,7 +37,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies",
+			"name": "http://localhost:8080/restapp/rest/movies",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -51,14 +51,14 @@
 					"raw": "{\n\t\"title\": \"test_movie_1\",\n\t\"releaseDate\": \"01-01-2001\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies",
+					"raw": "http://localhost:8080/restapp/rest/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies"
 					]
@@ -68,7 +68,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies",
+			"name": "http://localhost:8080/restapp/rest/movies",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -82,14 +82,14 @@
 					"raw": "{\n\t\"title\": \"test_movie_2\",\n\t\"releaseDate\": \"01-01-2002\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies",
+					"raw": "http://localhost:8080/restapp/rest/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies"
 					]
@@ -99,20 +99,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies",
+			"name": "http://localhost:8080/restapp/rest/movies",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies",
+					"raw": "http://localhost:8080/restapp/rest/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies"
 					]
@@ -122,20 +122,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2",
+			"name": "http://localhost:8080/restapp/rest/movies/2",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2",
+					"raw": "http://localhost:8080/restapp/rest/movies/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2"
@@ -146,7 +146,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2",
+			"name": "http://localhost:8080/restapp/rest/movies/2",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -160,14 +160,14 @@
 					"raw": "{\n    \"releaseDate\": \"01-01-2011\",\n    \"title\": \"test_movie_1_update\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies",
+					"raw": "http://localhost:8080/restapp/rest/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies"
 					]
@@ -177,20 +177,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"1",
@@ -202,7 +202,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -216,14 +216,14 @@
 					"raw": "{\n\t\"content\": \"test_content_1\",\n\t\"date\": \"01-01-2002\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"1",
@@ -235,20 +235,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/1/comments",
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"1",
@@ -260,7 +260,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments",
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -274,14 +274,14 @@
 					"raw": "{\n\t\"content\": \"test_content_2\",\n\t\"date\": \"01-01-2004\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -293,20 +293,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments/1",
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments/1",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments/1",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -319,20 +319,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments/2",
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments/2",
 			"request": {
 				"method": "DELETE",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments/2",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -345,20 +345,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments",
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/comments",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -370,20 +370,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -395,7 +395,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -409,14 +409,14 @@
 					"raw": "{\n\t\"value\": 1\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -428,7 +428,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -442,14 +442,14 @@
 					"raw": "{\n\t\"value\": 4\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -461,20 +461,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/ratings",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",
@@ -486,20 +486,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/actors",
+			"name": "http://localhost:8080/restapp/rest/actors",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/actors",
+					"raw": "http://localhost:8080/restapp/rest/actors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"actors"
 					]
@@ -509,7 +509,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/actors",
+			"name": "http://localhost:8080/restapp/rest/actors",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -523,14 +523,14 @@
 					"raw": "{\n\t\"name\": \"Test Actor\"\n}"
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/actors",
+					"raw": "http://localhost:8080/restapp/rest/actors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"actors"
 					]
@@ -540,20 +540,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/actors",
+			"name": "http://localhost:8080/restapp/rest/actors",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/actors",
+					"raw": "http://localhost:8080/restapp/rest/actors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"actors"
 					]
@@ -563,7 +563,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/actors/1/movies/2",
+			"name": "http://localhost:8080/restapp/rest/actors/1/movies/2",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -572,14 +572,14 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/actors/1/movies/2",
+					"raw": "http://localhost:8080/restapp/rest/actors/1/movies/2",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"actors",
 						"1",
@@ -592,20 +592,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/actors/1/movies",
+			"name": "http://localhost:8080/restapp/rest/actors/1/movies",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/actors/1/movies",
+					"raw": "http://localhost:8080/restapp/rest/actors/1/movies",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"actors",
 						"1",
@@ -617,20 +617,20 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/zaliczeniowe/rest/movies/2/actors",
+			"name": "http://localhost:8080/restapp/rest/movies/2/actors",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:8080/zaliczeniowe/rest/movies/2/actors",
+					"raw": "http://localhost:8080/restapp/rest/movies/2/actors",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"zaliczeniowe",
+						"restapp",
 						"rest",
 						"movies",
 						"2",

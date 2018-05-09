@@ -63,7 +63,7 @@
   </dependencies>
 
   <build>
-    <finalName>zaliczeniowe</finalName>
+    <finalName>restapp</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
