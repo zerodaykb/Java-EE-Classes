@@ -169,7 +169,8 @@
 					"path": [
 						"restapp",
 						"rest",
-						"movies"
+						"movies",
+						"2"
 					]
 				},
 				"description": "zmodyfikowanie filmu o id 2"
