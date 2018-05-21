@@ -8,8 +8,22 @@ import java.util.List;
 @XmlRootElement
 @Entity
 @NamedQueries({
-  @NamedQuery(name="Product.all", query="SELECT p FROM Product p"),
-  @NamedQuery(name="Product.id", query="SELECT p FROM Product p WHERE p.id=:productId")
+  @NamedQuery(
+    name="Product.all",
+    query="SELECT p FROM Product p"
+  ),
+  @NamedQuery(
+    name="Product.id",
+    query="SELECT p FROM Product p WHERE p.id=:productId"
+  ),
+  @NamedQuery(
+    name="Product.search",
+    query="SELECT p FROM Product p " +
+          "WHERE p.price >= :price_from " +
+          "AND p.price <= :price_to " +
+          "AND p.name LIKE :name " +
+          "AND p.category LIKE :category"
+  )
 })
 public class Product {
 
@@ -17,14 +31,9 @@ public class Product {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @Column(nullable = false)
   private String name;
-
-  private Double price;
-
-  @Enumerated(EnumType.STRING)
-  @Column(nullable = false)
-  private Category category;
+  private String category;
+  private double price;
 
   @OneToMany(mappedBy = "product")
   private List<Comment> comments;
@@ -45,19 +54,19 @@ public class Product {
     this.name = name;
   }
 
-  public Double getPrice () {
+  public double getPrice () {
     return price;
   }
 
-  public void setPrice (Double price) {
+  public void setPrice (double price) {
     this.price = price;
   }
 
-  public Category getCategory () {
+  public String getCategory () {
     return category;
   }
 
-  public void setCategory (Category category) {
+  public void setCategory (String category) {
     this.category = category;
   }
 

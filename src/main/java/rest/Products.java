@@ -23,6 +23,25 @@ public class Products {
 	public List<Product> getAll() {
 		return em.createNamedQuery("Product.all", Product.class).getResultList();
 	}
+
+  @Path("/search")
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Product> getQuery(
+		@QueryParam("price_from") int price_from,
+		@DefaultValue("100000") @QueryParam("price_to") int price_to,
+    @DefaultValue("") @QueryParam("name") String name,
+		@DefaultValue("") @QueryParam("category") String category) {
+
+
+		return em.createNamedQuery("Product.search", Product.class)
+      .setParameter("price_from", price_from)
+      .setParameter("price_to", price_to)
+      .setParameter("name", '%' + name + '%')
+      .setParameter("category", '%' + category + '%')
+      .getResultList();
+	}
+
 	
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)

@@ -15,11 +15,8 @@ public class Comment {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private int id;
 
-  @Column(updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"
-  )
+  @Column(updatable = false, insertable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
   private Timestamp timestamp;
-
-  @Column(nullable = false)
   private String content;
 
   @ManyToOne
