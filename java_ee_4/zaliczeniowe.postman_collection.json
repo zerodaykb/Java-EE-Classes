@@ -1,0 +1,646 @@
+{
+	"info": {
+		"_postman_id": "9a24ccf5-ed17-4e68-84a1-6c4666700788",
+		"name": "restapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/restapp/rest/movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"test_movie_1\",\n\t\"releaseDate\": \"01-01-2001\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies"
+					]
+				},
+				"description": "pobranie filmów - zwraca pustą tablicę"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"test_movie_1\",\n\t\"releaseDate\": \"01-01-2001\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies"
+					]
+				},
+				"description": "stworzenie nowego filmu o id 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"test_movie_2\",\n\t\"releaseDate\": \"01-01-2002\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies"
+					]
+				},
+				"description": "stworzenie nowego filmu o id 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies"
+					]
+				},
+				"description": "pobranie wszystkich dwóch filmów"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2"
+					]
+				},
+				"description": "pobranie filmu o id 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"releaseDate\": \"01-01-2011\",\n    \"title\": \"test_movie_1_update\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2"
+					]
+				},
+				"description": "zmodyfikowanie filmu o id 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"1",
+						"comments"
+					]
+				},
+				"description": "pobranie komentarzy z filmu nr 1 - zwraca pustą tablicę"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\": \"test_content_1\",\n\t\"date\": \"01-01-2002\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"1",
+						"comments"
+					]
+				},
+				"description": "dodanie komentarza pod film nr 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/1/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"1",
+						"comments"
+					]
+				},
+				"description": "pobranie komentarzy z filmu nr 1 - zwraca wcześniej dodany komentarz"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\": \"test_content_2\",\n\t\"date\": \"01-01-2004\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"comments"
+					]
+				},
+				"description": "dodanie komentarza pod film nr 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"comments",
+						"1"
+					]
+				},
+				"description": "próba usunięcia komentarza, który nie należy do danego filmu - zwraca 404"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"comments",
+						"2"
+					]
+				},
+				"description": "usunięcie komentarza z filmu o id 2"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"comments"
+					]
+				},
+				"description": "pobranie aktualnych komentarzy filmu z id 2 - zwraca już pustą tablicę"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"ratings"
+					]
+				},
+				"description": "pobranie oceny filmu o id 2 - zwraca 0, gdyż nie ma jeszce oceny"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"value\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"ratings"
+					]
+				},
+				"description": "dodanie pierwszej oceny"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"value\": 4\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"ratings"
+					]
+				},
+				"description": "dodanie drugiej oceny"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"ratings"
+					]
+				},
+				"description": "pobranie aktualnej średniej dla filmu"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/actors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"actors"
+					]
+				},
+				"description": "pobranie listy aktorów - pusta tablica"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/actors",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Test Actor\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"actors"
+					]
+				},
+				"description": "dodanie nowego aktora"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/actors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"actors"
+					]
+				},
+				"description": "pobranie listy katorow - jeden aktor"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/actors/1/movies/2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/actors/1/movies/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"actors",
+						"1",
+						"movies",
+						"2"
+					]
+				},
+				"description": "przypisanie filmu z id 2 do aktora z id 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/actors/1/movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/actors/1/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"actors",
+						"1",
+						"movies"
+					]
+				},
+				"description": "pobranie listy filmów danego aktora o id 1"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/restapp/rest/movies/2/actors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/restapp/rest/movies/2/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restapp",
+						"rest",
+						"movies",
+						"2",
+						"actors"
+					]
+				},
+				"description": "pobranie listy aktorow grajacych w filmie o id 2"
+			},
+			"response": []
+		}
+	]
+}
