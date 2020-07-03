@@ -1,1 +1,3 @@
-# projekt_java_mpr
+# projekt_java
+
+Some simple project using entity framework
