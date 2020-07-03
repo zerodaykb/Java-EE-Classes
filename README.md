@@ -1,3 +1,3 @@
 # projekt_java
 
-Some simple project using entity framework
+Some simple project using jdbc
