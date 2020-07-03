@@ -1,0 +1,3 @@
+export const GET_PDF_ERRORED = 'GET_PDF_ERRORED';
+export const GET_PDF_LOADING = 'GET_PDF_LOADING';
+export const GET_PDF_SUCCESS = 'GET_PDF_SUCCESS';
